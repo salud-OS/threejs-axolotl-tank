@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Axolotl Tank</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="infoBox">
+			<!--Information Box Tabs-->
+			<nav class="tabContainer">
+				<a href="#content-overview" class="buttonTab"><img src="ui_infoMain.svg" height=70px width=70px alt="Go to axolotl information"/></a>
+				<a href="#content-colors" class="buttonTab"><img src="ui_infoColor.svg" height=70px width=70px alt="Go to axolotl Colors"/></a>
+				<a href="#content-extra" class="buttonTab"><img src="ui_infoQuestion.svg" height=70px width=70px alt="Go to additional information"/></a>
+			</nav>
+			<!--Main Information Box-->
+			<div class="information"> 
+				<section id="content-overview">
+					<h3>Info</h3>
+					<p>
+						<img class="photo-axolotl" src="photo_axolotl.png" alt="Photograph of an leucistic (pink) axolotl in a sandy tank. It is looking upwards"/>
+						The axolotl <i>(Ambystoma mexicanum)</i> is a crtitically endangered species of salamander endemic to Lake Xochimilco in
+						present-day Mexico City. The name 'axolotl' derives from the dog-like Aztec god Xolotl and the Nahatul word 'atl', meaning water.
+						The species remains aquatic throughout its lifespan, but human inteference, such as the draining of the lakes surrounding Mexico City in 16th century, as well as water pollution, 
+						introduction of invasive aquatic species, and more has lead to the decline in the axolotl population. Axolotls have the ability to regenerate limbs and even parts
+						of the brain. While wild populations struggle, axolotls are sometimes held in captivity as exotic pets for aquariums.
+					</p>
+				</section>
+				<hr>
+				<section id="content-colors">
+					<h3>Colors</h3>
+					<p>
+						While wild axolotls are typically a dark gray or black in order to blend in with the water of their habitat, captive axolotls can be specifically bred to
+						display a variety of colors. <b>Leucism</b> can occur in many animals, including axolotls, and it describes the loss of pigmentation, causing the animal to appear
+						pale or white. In axolotls, this causes them to appear a bright pink with dark eyes. The similar condition called <b>albinism</b> also results in a pale pink body, but with
+						reddish eyes. <b>Piebald</b> axolotls display both the dark grays of wild axolotls mixed with the pink of leucistic axolotls, creating a spotted appearence of two colors.
+						<br><b>Use the buttons on the bottom right of the page to preview these morphs.</b>
+					</p>
+				</section>
+				<hr>
+				<section id="content-extra">
+					<h3>Additional Information</h3>
+					<p>
+						<ul>
+							<li>3D display made possible by three.js. <a href="https://threejs.org/">Learn more about three.js</a></li>
+							<li>Lake Xochimilco and axolotl photos originate from <a href="https://pixabay.com/">Pixabay</a> and <a href="https://unsplash.com/">Unsplash</a></li>
+							<li><a href="https://animals.sandiegozoo.org/animals/axolotl">Click to learn more about axolotls</a></li>
+						</ul>
+					</p>
+				</section>
+			</div>
+			<!--Color Swatch Picker-->
+			<div class="swatchContainer">
+				<button class="buttonColor" id="button_morphPink"><img src="ui_pinkButton.svg" height=50px width=50px alt="Switch to leucistic morph"/></button>
+				<button class="buttonColor" id="button_morphBlack"><img src="ui_blackButton.svg" height=50px width=50px alt="Switch to wild morph"/></button>
+				<button class="buttonColor" id="button_morphPiebald"><img src="ui_piebaldButton.svg" height=50px width=50px alt="Switch to piebald morph"/></button>
+			</div>
+			<footer>
+				<button class="creditsButton"><a href="https://github.com/salud-OS"><img src="github-mark-white.svg" height=50px width=50px alt="Go to Github profile"/></a></button>
+			</footer>
+		</div>
+		<script type="module" src="/main.js"></script>
+	</div>
+	</body>
+</html>

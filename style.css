@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.photo-axolotl{
+    float: right;
+    margin: 15px;
+}
+
+.tabContainer {
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    top: 20%;
+    left: 10%;
+}
+
+.swatchContainer {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    bottom: 10%;
+    right: 20%;
+}
+
+.information {
+    position: fixed;
+    background-image: linear-gradient(#0e1120, #0c223b);
+    border: 3px solid white;
+    color: white;
+    font-size: 25px;
+    padding: 15px 32px;
+    border-radius: 25px;
+    left: 10%;
+    top: 35%;
+    height: 45%;
+    max-width:35%;
+    overflow: auto;
+
+}
+
+.buttonTab, .buttonColor {
+    background-color:#0e1120;
+    border: 3px solid white;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttonTab:hover, .buttonColor:hover {
+    background-color:#1e2446;
+    transform: scale(1.2)
+}
+
+.buttonTab:active, .buttonColor:active {
+    background-color:rgb(31, 65, 116);
+}
+
+.creditsButton {
+    position: absolute;
+    background-color:#0e1120;
+    border: 3px solid white;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    bottom: 1%;
+    left: 1%;
+}
+
+.creditsButton:hover {
+    background-color:#1e2446;
+}
+
+a{
+    color: rgb(136, 241, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(216, 249, 255);
+    text-decoration: none;
+}
