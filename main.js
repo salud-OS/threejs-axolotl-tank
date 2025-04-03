@@ -16,7 +16,6 @@ scene.background = lakeBackground;
 
 // Animation set up
 var mixer;
-const clock = new THREE.Clock();
 
 // Load axolotl glb (model)
 const loader = new GLTFLoader();
@@ -76,8 +75,10 @@ document.body.appendChild(renderer.domElement);
 
 function animate() {
 	requestAnimationFrame(animate);
+	if(mixer){
+		mixer.update(1/120);
+	}
 	renderer.render(scene, camera);
-	mixer.update(clock.getDelta());
 }
 
 animate();
