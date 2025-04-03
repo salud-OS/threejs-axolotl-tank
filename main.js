@@ -58,17 +58,23 @@ TexturePiebald.colorSpace = THREE.SRGBColorSpace;
 const blackButton = document.getElementById('button_morphBlack');
 blackButton.addEventListener("click", blackSwap);
 function blackSwap(){
-	axolotl.children[0].children[0].material.emissiveMap = TextureBlack;
+	if(axolotl){
+		axolotl.children[0].children[0].material.emissiveMap = TextureBlack;
+	}
 }
 const pinkButton = document.getElementById('button_morphPink');
 pinkButton.addEventListener("click", pinkSwap);
 function pinkSwap(){
-	axolotl.children[0].children[0].material.emissiveMap = TexturePink;
+	if(axolotl){
+		axolotl.children[0].children[0].material.emissiveMap = TexturePink;
+	}
 }
 const piebaldButton = document.getElementById('button_morphPiebald');
 piebaldButton.addEventListener("click", PiebaldSwap);
 function PiebaldSwap(){
-	axolotl.children[0].children[0].material.emissiveMap = TexturePiebald;
+	if(axolotl){
+		axolotl.children[0].children[0].material.emissiveMap = TexturePiebald;
+	}
 }
 
 document.body.appendChild(renderer.domElement);
