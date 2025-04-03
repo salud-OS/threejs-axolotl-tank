@@ -21,7 +21,7 @@ var mixer;
 const loader = new GLTFLoader();
 let axolotl;
 loader.load(
-	'/axolotl_model.glb',
+	'axolotl_model.glb',
 	function (gltf) {
 		axolotl = gltf.scene;
 		scene.add(axolotl)
